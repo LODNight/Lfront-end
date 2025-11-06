@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    padding: 15px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  .banner {
+    background: url('https://picsum.photos/1200/600?fashion') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .banner-content button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .products {
+    padding: 60px 10%;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .products h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  .product-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .about, .contact {
+    padding: 60px 10%;
+    text-align: center;
+  }
+  
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  
