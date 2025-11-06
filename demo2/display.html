@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Display</title>
+    <style>
+        p{
+            background-color: rgb(181, 181, 179);
+            padding: 15px 10px;
+        }
+        p span{
+            background-color: rgb(97, 97, 96);
+            color: white;
+            padding: 5px;
+        }
+        .ex1{
+            display: none;
+        }
+        .ex2{
+            display: inline;
+        }
+        .ex3{
+            display: block;
+        }
+        .ex4{
+            display: inline-block;
+        }
+        .ex5{
+            display: flex;
+        }
+        .ex6{
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <h1>The display Property</h1>
+    <hr>
+
+    <h2>Display: none:</h2>
+    <h3 style="font-weight: 100;">- Ẩn phần tử khỏi trang</h3>
+    <div><b>Vd:</b> <i>Dùng cho menu ẩn, popup</i> </div> 
+    <p class="ex1">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        <span>Text 4</span>
+        <span>Text 5</span>
+    </p>
+    
+    <h2>Display: inline:</h2>
+    <h3 style="font-weight: 100;">- Nằm trên cùng 1 dòng (không xuống dòng)</h3>
+    <div><b>Vd:</b> <i>span, a</i></div>  
+    <br>
+    <p class="ex2">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        <span>Text 4</span>
+        <span>Text 5</span>
+        <span>Text 6</span>
+        <span>Text 7</span>
+    </p>
+    <h2>Display: block:</h2>
+    <h3 style="font-weight: 100;">- Phần tử chiếm toàn bộ chiều ngang (xuống dòng)</h3>
+    <div><b>Vd:</b> <i>div, p, h</i></div> 
+    <br>
+    <p class="ex3">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        <span>Text 4</span>
+        <span>Text 5</span>
+        <span>Text 6</span>
+        <span>Text 7</span>
+    </p>
+    
+    <h2>Display: inline-block:</h2>
+    <h3 style="font-weight: 100;">- Giống inline nhưng cho chỉnh kích thước (width/height)</h3>
+    <div><b>Vd:</b> <i>Nút bấm hoặc icon</i></div> 
+    <br>
+    <p class="ex4">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        <span>Text 4</span>
+        <span>Text 5</span>
+        <span>Text 6</span>
+        <span>Text 7</span>
+    </p>
+    
+    <h2>Display: flex:</h2>
+    <h3 style="font-weight: 100;">- Dùng Flexbox để bố trí phần tử con</h3>
+    <div><b>Vd:</b> <i>Bố cục hàng ngang, căn giữa</i></div>
+    <br>
+    <p class="ex5">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        <span>Text 4</span>
+        <span>Text 5</span>
+        <span>Text 6</span>
+        <span>Text 7</span>
+    </p>
+    
+    <h2>Display: grid:</h2>
+    <h3 style="font-weight: 100;">- Dùng Grid Layout để chia ô lưới</h3>
+    <div><b>Vd:</b> <i>Giao diện dạng bảng</i></div> 
+    <br>
+    <p class="ex6">
+      <span>Text 1</span>
+      <span>Text 2</span>
+      <span>Text 3</span>
+      <span>Text 4</span>
+      <span>Text 5</span>
+      <span>Text 6</span>
+      <span>Text 7</span>
+    </p>
+</body>
+</html>
