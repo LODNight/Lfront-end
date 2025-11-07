@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow-wrap & word-break</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box-model{
+            display: flex;
+        }
+        .box-1,.box-2,.box-3{
+            border: 3px solid lightgray;
+            width: 300px;
+            height: 400px;
+            margin: 20px ;
+        }
+        .box-1{
+            overflow: hidden;
+        }
+        .box-2{
+            overflow-wrap:break-word;
+        }
+        .box-3{
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>So sánh overflow-wrap và word-break</h1>
+        <div class="box-model">
+            <div class="box-1">
+                <b>overflow:hidden</b>
+                Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
+                https://www.bing.com/search?q=t%E1%BB%AB+ti%E1%BA%BFng+anh+d%C3%A0i+nh%E1%BA%A5t&form=ANNTH1&refig=690df01a0eed4b3d98e28c32b6d7a3c3&pc=CNNDDB&adppc=EDGEXST&pqlth=14&assgl=21&sgcn=t%E1%BB%AB+ti%E1%BA%BFng+anh+d%C3%A0i+nh%E1%BA%A5t&sgtpv=EP&smvpcn=0&swbcn=10&sctcn=0&cvid=690df01a0eed4b3d98e28c32b6d7a3c3&kpratsg=1&hsmssg=0
+            </div>
+    
+            <div class="box-2">
+                <b>overflow-wrap:break-word</b>
+                Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
+                https://www.bing.com/search?q=t%E1%BB%AB+ti%E1%BA%BFng+anh+d%C3%A0i+nh%E1%BA%A5t&form=ANNTH1&refig=690df01a0eed4b3d98e28c32b6d7a3c3&pc=CNNDDB&adppc=EDGEXST&pqlth=14&assgl=21&sgcn=t%E1%BB%AB+ti%E1%BA%BFng+anh+d%C3%A0i+nh%E1%BA%A5t&sgtpv=EP&smvpcn=0&swbcn=10&sctcn=0&cvid=690df01a0eed4b3d98e28c32b6d7a3c3&kpratsg=1&hsmssg=0
+            </div>
+            
+            <div class="box-3">
+                <b>word-break:break-all</b>
+                Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
+                https://www.bing.com/search?q=t%E1%BB%AB+ti%E1%BA%BFng+anh+d%C3%A0i+nh%E1%BA%A5t&form=ANNTH1&refig=690df01a0eed4b3d98e28c32b6d7a3c3&pc=CNNDDB&adppc=EDGEXST&pqlth=14&assgl=21&sgcn=t%E1%BB%AB+ti%E1%BA%BFng+anh+d%C3%A0i+nh%E1%BA%A5t&sgtpv=EP&smvpcn=0&swbcn=10&sctcn=0&cvid=690df01a0eed4b3d98e28c32b6d7a3c3&kpratsg=1&hsmssg=0
+            </div>
+        </div>
+    </div>
+</body>
+</html>
