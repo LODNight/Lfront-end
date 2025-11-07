@@ -69,6 +69,8 @@ header{
     width: 100%;
 }
 
+
+/* BODY */
 .container{
     display: flex;
     width: 100%;
@@ -86,4 +88,12 @@ header{
     width: 30%;
     padding: 100% 5px;
     margin: 5px;
+}
+
+/* FOOTTER */
+.footer{
+    background-color: beige;
+    height: 30%;
+    padding: 10% 100%;
+    margin: 10px 10px;
 }

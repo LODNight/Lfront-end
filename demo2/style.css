@@ -76,3 +76,15 @@
     box-shadow: 0 6px 10px rgba(13, 110, 253, 0.4);
     transform: translateY(-1px);
 }
+
+
+.container{
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
